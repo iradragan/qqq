@@ -1,0 +1,64 @@
+<!DOCTYPE! html>
+<html lang="en">
+    <head>
+        <title>Weather</title>
+        <meta charset="UTF-8">
+        
+        <!-- STYLESHEET LINKS HERE -->
+        
+            <link rel="stylesheet" href="css/index.css">
+            
+        <!-- FONT LINKS HERE -->
+        
+            <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>Weather Sketch</h1>
+            </div>
+            <div class="search">
+                <form name="Location" action="#" method="get">
+                    <input type="text" placeholder="Search city">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <ul>
+                <li class="active"><a href="index.html">Now</a></li>
+                <li><a href="5days.html">5 Days</a></li>
+                <li><a href="about.html">About The Website</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="main-table">
+                <table id="current">
+                    <tr>
+                        <th><span id="loc"></span></th>
+                    </tr>
+                    <tr>
+                        <th><span id="condition"></span></th>
+                        <td><span id="temp"></span> &deg;C</td>
+                        <td>
+                            <ul id="details">
+                                <li id="wind"></li>
+                                <li id="humidity"></li>
+                                <li id="precipitation"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        
+        <!-- SCRIPTS HERE! -->
+        
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script type="text/javascript" src="scripts/index/js"></script>
+    
+    </body>
+</html>
